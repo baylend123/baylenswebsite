@@ -25,7 +25,7 @@ export const BlogList = async () => {
     console.log("Fetched posts:", posts[0]); // Debugging log
     return (
         <>
-            <div className="flex flex-row gap-4 flex-wrap px-4 py-8">
+            <div className="flex flex-row gap-4 flex-wrap mx-auto py-8 px-22">
                 {posts.map((post) => (
                     <BlogCard key={post._id} title={post.title} publishedAt={post.publishedAt} slug={post.slug.current} heroImage={post.heroImage
                         ? urlFor(post.heroImage)?.width(550).height(310).url()
