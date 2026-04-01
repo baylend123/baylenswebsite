@@ -7,7 +7,7 @@ export const BlogCard = ({title, publishedAt, slug, heroImage, author, readingTi
     return (
         <div className="cursor-pointer hover:bg-[#D7B980] p-2 rounded bg-[#D7B980]/50 hover:shadow">
    
-                <Link href={`/${slug}`}>
+                <Link href={`/blog/${slug}`}>
                 <Image
                     src={heroImage || "/placeholder.png"}
                     alt={title}
