@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const BlogCard = ({title, publishedAt, slug, heroImage, author, readingTime }: { title: string; publishedAt: string; slug: string; heroImage: string | null | undefined; author: string; readingTime: number }) => {
-    console.log("Rendering BlogCard with props:", { title, publishedAt, slug, heroImage, author, readingTime }); // Debugging log
     return (
         <div className="cursor-pointer hover:bg-[#D7B980] p-2 rounded bg-[#D7B980]/50 hover:shadow">
    
