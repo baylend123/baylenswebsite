@@ -30,11 +30,9 @@ export default async function BlogPostPage({
     const postImageUrl = post.heroImage
         ? urlFor(post.heroImage)?.width(1000).height(500).url()
         : null;
-    console.log(post)
     const authorImageUrl = post.authorImage
         ? urlFor(post.authorImage)?.width(100).height(100).url()
         : null;
-    console.log(post)
     return (
         <main className="container mx-auto min-h-screen max-w-7xl p-8 flex flex-col gap-4">
             <div className="flex felx-row justify-between">

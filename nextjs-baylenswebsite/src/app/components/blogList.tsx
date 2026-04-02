@@ -21,8 +21,6 @@ const urlFor = (source: SanityImageSource) =>
 
 export const BlogList = async () => {
     const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY, {}, options);
-
-    console.log("Fetched posts:", posts[0]); // Debugging log
     return (
         <>
             <div className="flex flex-row gap-4 flex-wrap mx-auto py-8 px-22">
